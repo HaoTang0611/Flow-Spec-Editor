@@ -41,8 +41,6 @@ MUST 透過 `ILogger.Info` 記錄系統關閉開始。
 
 若有工單正在進行中，MUST 先執行工單結束流程（詳見 `flows/WorkOrder.md`），再繼續後續步驟。
 
-> `flows/WorkOrder.md` 尚未建立（Phase 2）。本步驟為預留佔位，不影響 Phase 1 驗收。
-
 ---
 
 ### 步驟 3：關閉外部通訊連線

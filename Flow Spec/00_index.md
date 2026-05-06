@@ -31,9 +31,9 @@
 
 | 文件 | 說明 |
 |------|------|
-| `flows/WorkOrder.md` | 工單管理流程（待建立） |
-| `flows/Inspection.md` | 單次即時檢測流程（待建立） |
-| `flows/BatchInspection.md` | 離線批次檢測流程（待建立） |
+| [flows/WorkOrder.md](flows/WorkOrder.md) | 工單管理流程：工單生命週期（Idle ↔ WorkOrderActive）、推論輸入的工單歸屬約束 |
+| [flows/Inspection.md](flows/Inspection.md) | 單次即時檢測流程：觸發取像→（前處理）→推論→IO 輸出→存檔決策完整序列 |
+| [flows/BatchInspection.md](flows/BatchInspection.md) | 離線批次檢測流程：批次啟動、進度監視、結果處理、取消與失敗回應 |
 
 ### 輔助作業流程
 
