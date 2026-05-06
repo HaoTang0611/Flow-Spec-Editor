@@ -40,15 +40,15 @@ Core Contract 已定義完整的介面能力與資料模型，但本專案尚未
 | `flows/Inspection.md` | 單次即時檢測流程：觸發取像→（前處理）→推論→結果回收→IO輸出→存檔序列 | 完成 |
 | `flows/BatchInspection.md` | 離線批次檢測流程：批次啟動、進度監視、完成/取消/失敗 | 完成 |
 
-### Phase 3：輔助作業流程
+### Phase 3：輔助作業流程（已完成）
 
 > 補充說明作業中的輔助流程，依賴 Phase 2。
 
-| 文件 | 說明 |
-|------|------|
-| `flows/AlarmHandling.md` | 警報觸發與清除流程：何時觸發警報、各層級警報的業務回應策略、操作員清除流程 |
-| `flows/AccountSession.md` | 帳號登入登出流程：登入狀態與業務流程的關聯、角色對操作的影響 |
-| `flows/ProjectLoad.md` | 專案切換流程：切換前的準備步驟、切換後的硬體重新配置序列 |
+| 文件 | 說明 | 狀態 |
+|------|------|------|
+| `flows/AlarmHandling.md` | 警報觸發與清除流程：業務狀態機（Normal／ErrorSuspended／CriticalFault）、操作員清除序列與恢復條件；OQ-06（軟/硬暫停）待解決 | 完成 |
+| `flows/AccountSession.md` | 帳號登入登出流程：登入狀態轉移、本專案角色授權政策（UserRole ↔ PlatformAction）、登入登出對工單的影響 | 完成 |
+| `flows/ProjectLoad.md` | 專案切換流程：切換前置條件、硬體釋放與重新初始化序列、SwitchFailed 回應；OQ-10（工單切換時機）待解決 | 完成 |
 
 ### Phase 4（選填）：結果與統計查詢流程
 
