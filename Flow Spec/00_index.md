@@ -42,3 +42,9 @@
 | [flows/AlarmHandling.md](flows/AlarmHandling.md) | 警報處理流程：業務狀態機（Normal／ErrorSuspended／CriticalFault）、操作員清除序列與恢復條件 |
 | [flows/AccountSession.md](flows/AccountSession.md) | 帳號登入登出流程：狀態轉移、本專案角色授權政策（UserRole ↔ PlatformAction）、登入登出對工單的影響 |
 | [flows/ProjectLoad.md](flows/ProjectLoad.md) | 專案切換流程：切換前置條件、硬體釋放與重新初始化序列、SwitchFailed 回應 |
+
+### 結果與統計查詢
+
+| 文件 | 說明 |
+|------|------|
+| [flows/ResultQuery.md](flows/ResultQuery.md) | 歷史結果查詢流程：條件篩選、分頁列覽、單筆詳情讀取、統計彙整、工單清單列舉 |

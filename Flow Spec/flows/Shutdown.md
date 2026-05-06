@@ -81,6 +81,6 @@ MUST 透過 `ILogger.Info` 記錄系統關閉完成。
 |------|-------|
 | 關閉序列的觸發判定與使用者確認互動 | Project Implementation / UI 層 |
 | `Disconnect` / `Dispose` 的具體驅動實作 | Core Implementation |
-| 關閉時未完成工單的詳細處理邏輯 | `flows/WorkOrder.md`（Phase 2） |
+| 關閉時未完成工單的詳細處理邏輯 | `flows/WorkOrder.md` |
 | 光源控制器的哪些頻道識別碼需要呼叫 `TurnOff` | 依 `ProjectLightingControllerConfiguration` 中的頻道定義；Project Implementation 負責維護清單 |
 | 部分初始化狀態下（`StartupFailed`）的釋放策略細節 | Project Implementation（需追蹤哪些資源已成功取得） |

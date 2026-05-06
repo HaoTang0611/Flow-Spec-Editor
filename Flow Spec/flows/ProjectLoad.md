@@ -47,7 +47,7 @@
 2. 系統業務狀態 MUST NOT 處於 `ErrorSuspended` 或 `CriticalFault`（見 `flows/AlarmHandling.md`）
 3. 目前無進行中的批次推論作業（`IBatchInspector` 非執行中狀態）
 
-關於工單狀態：若目前有進行中的工單（`WorkOrderActive`），MUST 先完成工單再執行切換（受 OQ-10 影響；若業務需求允許在工單進行中強制切換，需更新此前置條件並補充工單中止語意）。
+關於工單狀態：若目前有進行中的工單（`WorkOrderActive`），MUST 先完成工單再執行切換（若業務需求允許在工單進行中強制切換，需更新此前置條件並補充工單中止語意）。
 
 ---
 
@@ -131,8 +131,8 @@ MUST 透過 `ILogger.Info` 記錄切換完成（含新專案名稱）；系統�
 
 | 責任 | 所屬層 |
 |------|-------|
-| 切換前是否需要先結束工單的最終業務決策 | 待 OQ-10 解決後更新本文件前置條件 |
-| 正在進行中即時推論的中止語意（若切換觸發中止） | 依 OQ-06 解決結果適用 `flows/AlarmHandling.md` 規定 |
+| 切換前是否需要先結束工單的最終業務決策 | 本文件第四節暫定須先完成工單；若業務需求允許例外，需更新前置條件 |
+| 正在進行中即時推論的中止語意（若切換觸發中止） | 依 `flows/AlarmHandling.md` 暫停語意決策後適用 |
 | 目標專案的選取方式（清單選擇、設定檔指定） | Project Implementation / UI 層 |
 | 硬體實例（`ICamera`、`ILightingController` 等）在切換時是否重用舊實例或重建 | Project Implementation |
 | `InspectionPipeline` 與 `IInspector` 實例、`ProjectModelConfiguration` 的對應機制 | Project Implementation（同 Startup 流程） |
