@@ -168,10 +168,10 @@
 
 | 責任 | 所屬層 |
 |------|-------|
-| InspectionPipeline 與對應 `ICamera`、`IImagePreprocessor`、`IInspector` 實例的組合關係 | Project Implementation（OQ-01） |
+| InspectionPipeline 與對應 `ICamera`、`IImagePreprocessor`、`IInspector` 實例的組合關係 | Project Implementation |
 | 觸發方式的選擇與觸發訊號來源 | Project Implementation |
-| 多個 Pipeline 的並行執行協調 | 尚未決策；待業務需求確認後補充定義 |
-| 批次推論進行中是否允許本流程並行執行 | 尚未決策；待業務需求確認後補充定義 |
+| 多個 Pipeline 的並行執行協調 | Project Implementation |
+| 批次推論進行中是否允許本流程並行執行 | Project Implementation |
 | `OutputChannelMapping` 中 Judgment 值與通道的對應規則 | Project Implementation |
 | 輸出訊號的復位時機與策略 | Project Implementation |
 | 原始影像的實際寫入實作 | Project Implementation |

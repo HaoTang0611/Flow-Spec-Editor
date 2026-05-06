@@ -54,8 +54,6 @@
 - 新的批次推論請求（`IBatchInspector` 啟動）MUST 被拒絕
 - 工單建立 MUST 被拒絕
 
-正在進行中操作的中止語意（軟暫停：允許進行中推論完成後停止；硬暫停：立即中止）目前暫不規定，待業務需求確認後補充定義。
-
 恢復條件：
 
 - 業務層 MUST 訂閱 `IAlarmProvider.OnAlarmChanged`，在收到 `Cleared` 狀態通知後評估是否可恢復
@@ -107,7 +105,7 @@
 |------|-------|
 | `AlarmLevel` 業務回應策略（分層行為規則） | `cross-cutting-policy.md`（本層） |
 | 硬體斷線觸發警報的時機與 `AlarmLevel` | `cross-cutting-policy.md`（本層） |
-| `Error` 層級暫停期間正在進行中操作的中止語意（軟/硬暫停） | 尚未決策；待業務需求確認後補充定義於本文件 |
+| `Error` 層級暫停期間正在進行中操作的中止語意（軟/硬暫停） | Project Implementation |
 | `AlarmInfo` 資料格式（`AlarmId`、`Level`、`State`、`Code`、`Message`） | Core Contract |
 | 警報識別碼的產生規則與具體 `AlarmCode` 的定義 | Project Implementation |
 | 操作員清除警報的 UI 入口與步驟確認流程 | Project Implementation / UI 層 |

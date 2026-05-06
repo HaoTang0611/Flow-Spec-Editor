@@ -79,7 +79,6 @@
 `BatchRunning` 期間 MUST 遵守：
 
 - MUST NOT 呼叫 `IBatchInspector.Start` 啟動新批次
-- 即時單次推論（`flows/Inspection.md`）與批次並行的行為尚未決策，待業務需求確認後補充定義
 
 ---
 
@@ -151,6 +150,6 @@
 | 批次輸入列表的建立（選擇哪些已儲存影像、以何種順序） | Project Implementation |
 | 批次執行中的進度 UI 呈現 | Project Implementation |
 | 批次結果的持久化寫入時機 | Project Implementation |
-| 批次推論期間即時單次推論的互斥保證 | 尚未決策；待業務需求確認後補充定義 |
+| 批次推論期間即時單次推論的互斥保證 | Project Implementation |
 | 批次推論是否觸發 IO 輸出 | 不屬於本層規範（批次為離線模式，無線上 IO 需求） |
 | 批次輸入影像的重複存檔決策 | Project Implementation |
